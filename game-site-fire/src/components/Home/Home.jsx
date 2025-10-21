@@ -7,6 +7,10 @@ export async function loader() {
   return games.sort((a, b) => b.ratings - a.ratings).slice(0, 3);
 }
 
-const Home = () => <div>Home Page</div>;
+const Home = () => 
+        <div>
+          Home Page
+          <div className="btn btn-primary bg-red-500 text-white p-4">Test</div>
+        </div>;
 
 export default Home;
