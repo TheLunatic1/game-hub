@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Home, { loader as homeLoader } from './components/Home/Home';
+import Games, { loader as gamesLoader } from './components/Games/Games';
+import GameDetails, { loader as gameDetailsLoader } from './components/GameDetails/GameDetails';
+import MyProfile from './components/MyProfile/MyProfile';
+import UpdateInfo from './components/UpdateInfo/UpdateInfo';
+import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
+import ForgetPassword from './components/Auth/ForgetPassword';
+import Developers from './components/Developers/Developers';
+import ErrorPage from './components/ErrorPage/ErrorPage';
+import { auth } from './firebase';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [user, setUser] = useState(null);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  const router = createBrowserRouter([
+    {
+      element: <Layout user={user} setUser={setUser} />,
+      errorElement: <ErrorPage />,
+      children: [
+        { path: '/', element: <Home />, loader: homeLoader },
+        { path: '/games', element: <Games />, loader: gamesLoader },
+        { path: '/games/:id', element: <GameDetails user={user} />, loader: gameDetailsLoader },
+        { path: '/my-profile', element: <MyProfile user={user} /> },
+        { path: '/update-info', element: <UpdateInfo user={user} setUser={setUser} /> },
+        { path: '/login', element: <Login setUser={setUser} /> },
+        { path: '/register', element: <Register setUser={setUser} /> },
+        { path: '/forget-password', element: <ForgetPassword /> },
+        { path: '/developers', element: <Developers /> },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
