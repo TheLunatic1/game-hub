@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
-import Home, { loader as homeLoader } from './components/Home/Home';
-import Games, { loader as gamesLoader } from './components/Games/Games';
-import GameDetails, { loader as gameDetailsLoader } from './components/GameDetails/GameDetails';
+import Home from './components/Home/Home';
+import Games from './components/Games/Games';
+import GameDetails from './components/GameDetails/GameDetails';
 import MyProfile from './components/MyProfile/MyProfile';
 import UpdateInfo from './components/UpdateInfo/UpdateInfo';
 import Login from './components/Auth/Login';
@@ -28,9 +28,9 @@ function App() {
       element: <Layout user={user} setUser={setUser} />,
       errorElement: <ErrorPage />,
       children: [
-        { path: '/', element: <Home />, loader: homeLoader },
-        { path: '/games', element: <Games />, loader: gamesLoader },
-        { path: '/games/:id', element: <GameDetails user={user} />, loader: gameDetailsLoader },
+        { path: '/', element: <Home /> },
+        { path: '/games', element: <Games /> },
+        { path: '/games/:id', element: <GameDetails user={user} /> },
         { path: '/my-profile', element: <MyProfile user={user} /> },
         { path: '/update-info', element: <UpdateInfo user={user} setUser={setUser} /> },
         { path: '/login', element: <Login setUser={setUser} /> },
