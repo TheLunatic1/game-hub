@@ -20,7 +20,7 @@ const Games = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1.5 }}
       className="container mx-auto py-12 px-4 bg-gray-900 text-white min-h-screen"
     >
       <h1 className="text-4xl font-bold text-center mb-8 text-[#00FF6F]">All Games</h1>

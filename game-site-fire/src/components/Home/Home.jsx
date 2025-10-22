@@ -16,7 +16,7 @@ const Home = () => {
         if (!response.ok) throw new Error('Failed to fetch games');
         return response.json();
       })
-      .then((data) => setGames(data.sort((a, b) => b.ratings - a.ratings).slice(0, 3))) // Top 3
+      .then((data) => setGames(data.sort((a, b) => b.ratings - a.ratings).slice(0, 3)))
       .catch((error) => console.error('Error fetching games:', error));
   }, []);
 
@@ -27,32 +27,26 @@ const Home = () => {
       transition={{ duration: 0.5 }}
       className="bg-gray-900 text-white"
     >
-      {/* Banner */}
+
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide>
-          <img
-            src="https://placehold.co/1900x380?text=Banner+1"
-            alt="Game Banner 1"
-            className="m-2 w-full h-96 object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://placehold.co/1900x380?text=Banner+2"
-            alt="Game Banner 2"
-            className="m-2 w-full h-96 object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://placehold.co/1900x380?text=Banner+3"
-            alt="Game Banner 3"
-            className="m-2 w-full h-96 object-cover"
-          />
-        </SwiperSlide>
+        {games.length > 0 ? (
+          games.map((game) => (
+            <SwiperSlide key={game.id}>
+              <img
+                src={game.coverPhoto}
+                alt={game.title}
+                className="w-full h-96 object-cover"
+              />
+            </SwiperSlide>
+          ))
+        ) : (
+          <SwiperSlide>
+            <p className="text-center text-white">Loading...</p>
+          </SwiperSlide>
+        )}
       </Swiper>
 
-      {/* Popular Games */}
+
       <div className="container mx-auto py-12 px-4">
         <h2 className="text-3xl font-bold text-center mb-8 text-[#00FF6F]">
           Popular Games
@@ -66,7 +60,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Newsletter Form */}
+
       <div className="bg-[#D600FF] py-12 text-center">
         <h2 className="text-3xl font-bold mb-4 text-white">Subscribe to Newsletter</h2>
         <p className="mb-4 text-white">Get updates on new games!</p>

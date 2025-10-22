@@ -23,7 +23,7 @@ const Navbar = ({ user, setUser }) => {
     <div className="navbar bg-gray-900 shadow-md text-white sticky top-0 z-50">
       <div className="flex-1">
         <NavLink to="/" className="btn border-none bg-transparent shadow-none text-xl text-[#00FF6F] font-bold">
-          <img className="h-10" src={logo} alt="Gamehub Logo" />
+          <img className="h-10" src={"https://pbs.twimg.com/profile_images/1637807844035633153/LHlMBdqi_400x400.jpg"} alt="Gamehub Logo" />
           Gamehub
         </NavLink>
       </div>
