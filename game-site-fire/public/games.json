@@ -1,22 +1,152 @@
 [
   {
     "id": "1",
-    "title": "Player Unknowns Battle Ground: PUBG",
-    "coverPhoto": "https://via.assets.so/game.jpg?w=1280&h=720",
-    "category": "FPS",
-    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
-    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "title": "PlayerUnknown's Battlegrounds (PUBG)",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.pubg.com/",
+    "description": "PUBG is a competitive battle royale shooter where players fight to be the last one standing on dynamic maps.",
     "ratings": "4.5",
     "developer": "Krafton"
   },
   {
     "id": "2",
     "title": "Fortnite",
-    "coverPhoto": "https://via.assets.so/game.jpg?w=1280&h=720",
+    "coverPhoto": "https://cdn2.unrealengine.com/fnsp-37-50-s11musicpass-egs-pdp-2560x1440-2560x1440-9a46c3f0be97.jpg",
     "category": "Battle Royale",
     "downloadLink": "https://www.epicgames.com/fortnite",
-    "description": "Build, battle, and survive in this free-to-play battle royale.",
+    "description": "Fortnite combines building, shooting, and creativity in an ever-evolving battle royale experience.",
     "ratings": "4.2",
     "developer": "Epic Games"
+  },
+  {
+    "id": "3",
+    "title": "Call of Duty: Warzone",
+    "coverPhoto": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/54bd6a40eb3759aca46966aadd4c4d0d84b2713e/header.jpg?t=1760458556",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/warzone",
+    "description": "Warzone is a large-scale battle royale mode featuring iconic Call of Duty gunplay and intense combat.",
+    "ratings": "4.4",
+    "developer": "Activision"
+  },
+  {
+    "id": "4",
+    "title": "Apex Legends",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Apex Legends is a fast-paced hero shooter set in the Titanfall universe with team-based tactical gameplay.",
+    "ratings": "4.6",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "5",
+    "title": "Valorant",
+    "coverPhoto": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e89ed4f29436931ec80e58d85def28cb1df0e8b1-3440x1020.png?auto=format&fit=fill&q=80&h=640",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant is a tactical 5v5 hero shooter that mixes gunplay precision with unique agent abilities.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "6",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "Counter-Strike 2 is the evolution of the classic tactical shooter, built on the Source 2 engine.",
+    "ratings": "4.8",
+    "developer": "Valve"
+  },
+  {
+    "id": "7",
+    "title": "Overwatch 2",
+    "coverPhoto": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt806f229382fc0360/5e84e905297b4d1b5ff03813/echo-screenshot-005.jpg",
+    "category": "Hero Shooter",
+    "downloadLink": "https://overwatch.blizzard.com/",
+    "description": "Overwatch 2 is a team-based shooter featuring dynamic heroes, fast-paced objectives, and colorful visuals.",
+    "ratings": "4.1",
+    "developer": "Blizzard Entertainment"
+  },
+  {
+    "id": "8",
+    "title": "Minecraft",
+    "coverPhoto": "https://www.minecraft.net/content/dam/games/minecraft/key-art/Minecraft-xbox-one.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "Minecraft is a block-based open-world game about creativity, exploration, and survival.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "9",
+    "title": "Grand Theft Auto V",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
+    "category": "Open World",
+    "downloadLink": "https://www.rockstargames.com/gta-v",
+    "description": "GTA V is an open-world action game featuring crime, chaos, and storytelling across Los Santos.",
+    "ratings": "4.9",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "10",
+    "title": "League of Legends",
+    "coverPhoto": "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-47eb328eac5ddd63ebd096ded7d0d5ab?resize=1&w=480&h=270&quality=medium",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "League of Legends is a competitive 5v5 MOBA where champions battle to destroy the enemy Nexus.",
+    "ratings": "4.5",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "11",
+    "title": "Dota 2",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.dota2.com/",
+    "description": "Dota 2 is a complex and strategic MOBA where two teams of heroes compete to destroy the Ancient.",
+    "ratings": "4.4",
+    "developer": "Valve"
+  },
+  {
+    "id": "12",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "The Witcher 3 is a story-driven RPG set in a beautifully dark fantasy world full of monsters and magic.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "13",
+    "title": "Elden Ring",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+    "description": "Elden Ring is an open-world action RPG that combines deep lore and brutal combat by FromSoftware.",
+    "ratings": "4.9",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "14",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2602/30935168a0f21b6710dc2bd7bb37c23ed937fb9fa747d84c.png",
+    "category": "Adventure RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "Genshin Impact is an open-world adventure RPG with elemental combat and anime-style storytelling.",
+    "ratings": "4.6",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "15",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://www.cyberpunk.net/",
+    "description": "Cyberpunk 2077 is a futuristic open-world RPG set in the neon-lit city of Night City.",
+    "ratings": "4.3",
+    "developer": "CD Projekt Red"
   }
 ]
