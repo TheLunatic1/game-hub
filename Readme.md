@@ -1,32 +1,60 @@
-# Gamehub
+# GameHub 🎮✨
 
-Gamehub is a responsive, modern gaming platform built with **React+Vite**, **Firebase Authentication**, **Tailwind CSS**, and **DaisyUI**. It features a sleek urban neon theme with vibrant colors and animations using Framer Motion. Users can browse games, view details, manage profiles, and authenticate via email/password or Google. The app is deployed on Firebase Hosting.
+A modern, fully responsive gaming platform with an eye-catching **urban neon theme**. Browse games, view detailed info, manage your profile, and log in securely — all powered by React + Firebase.
 
-## Live Demo
-- **Firebase Hosting URL**: [`https://game-hub-b14e2.web.app/`]
-- **GitHub Repository**: [`https://github.com/programming-hero-web-course2/b12-a9-firesheild-TheLunatic1.git`]
+🔥 **Live Demo**: [https://game-hub-b14e2.web.app](https://game-hub-b14e2.web.app)  
+📂 **Repository**: [https://github.com/TheLunatic1/game-hub](https://github.com/TheLunatic1/game-hub)
 
-## Features
-- **User Authentication**:
-  - Login, Register, and Forget Password with Firebase Authentication (email/password or Google login).
-  - Profile management with name and photo URL updates.
+![GameHub Preview](https://i.imgur.com/kjnvHd2.png)  
+# Neon-themed homepage with Swiper slider & glowing game cards – fully responsive
 
-- **Game Browsing**:
-  - Home page with a Swiper slider showcasing top 3 games by rating.
-  - Games page listing all games.
-  - GameDetails page with game info and download link.
-- **Developers Page**: Lists unique game developers.
-- **Urban Neon Theme**: Consistent styling with neon-green and neon-purple.
-- **Animations**: Framer Motion for page transitions and hover effects on game cards.
-- **Dynamic Titles**: Each page sets a unique title.
-- **Error Handling**: Custom 404 page for invalid routes.
+### ✨ Key Features
+- Secure **Firebase Authentication** (Email/Password + Google Sign-In)
+- Profile management – update name & photo URL
+- Dynamic home slider showing **Top 3 games by rating** (powered by Swiper)
+- All Games page with beautiful hover animations
+- Detailed Game page with description, rating, genre, and download link
+- Developers page listing unique game developers
+- Smooth page transitions & hover effects using **Framer Motion**
+- Custom 404 Error page
+- Toast notifications with **React Toastify**
+- Dynamic document titles for every route
+- Fully responsive (mobile ↔ desktop)
 
-## Technologies Used
-- **React+Vitet**
-- **Firebase**
-- **Tailwind CSS**
-- **DaisyUI**
-- **Framer Motion**
-- **Swiper**
-- **React Router**
-- **React Toastify**
+### 🛠️ Tech Stack & Dependencies
+
+| Technology           | Purpose                          |
+|----------------------|----------------------------------|
+| React 18 + Vite      | Fast frontend framework & tooling|
+| Firebase Auth + Hosting | Authentication & deployment   |
+| React Router DOM v6  | Client-side routing              |
+| Tailwind CSS         | Utility-first styling            |
+| DaisyUI              | Beautiful component library      |
+| Framer Motion        | Smooth animations & transitions  |
+| Swiper               | Touch-enabled carousel/slider    |
+| React Toastify       | Toast notifications              |
+| React Helmet Async   | Dynamic page titles (optional)  |
+
+### 🚀 How to Run Locally
+
+
+# Clone the repository
+```bash
+git clone https://github.com/TheLunatic1/game-hub
+cd game-hub
+```
+
+# Install dependencies
+```
+npm install
+```
+
+# Create .env file (ask me if you need the variables)
+```
+cp .env.example .env.local
+```
+
+# Start development server
+```
+npm run dev
+```
